@@ -1,0 +1,47 @@
+{
+  "name": "ali-lowcode-generated-sources",
+  "version": "0.1.5",
+  "description": "阿里低代码引擎demo出码的产物",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router": "^5.2.1",
+    "@alifd/theme-design-pro": "^0.x",
+    "intl-messageformat": "^9.3.6",
+    "@ice/store": "^1.4.3",
+    "@loadable/component": "^5.15.2",
+    "@alilc/lowcode-datasource-engine": "latest",
+    "@alilc/lowcode-datasource-fetch-handler": "latest",
+    "@alifd/pro-layout": "latest",
+    "@alifd/fusion-ui": "1.0.4",
+    "@alilc/lowcode-materials": "latest"
+  },
+  "devDependencies": {
+    "@ice/spec": "^1.0.0",
+    "build-plugin-fusion": "^0.1.0",
+    "build-plugin-moment-locales": "^0.1.0",
+    "eslint": "^6.0.1",
+    "ice.js": "^1.0.0",
+    "stylelint": "^13.2.0"
+  },
+  "scripts": {
+    "start": "icejs start",
+    "build": "icejs build",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx ./",
+    "stylelint": "stylelint ./**/*.scss"
+  },
+  "ideMode": {
+    "name": "ice-react"
+  },
+  "iceworks": {
+    "type": "react",
+    "adapter": "adapter-react-v3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "private": true,
+  "originTemplate": "@alifd/scaffold-lite-js"
+}
